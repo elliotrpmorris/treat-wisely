@@ -4,3 +4,19 @@
 .title {
   font-size: 2rem;
 }
+
+.title-link {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+.nav {
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.logo {
+  height: 48px;
+  width: 48px;
+  margin-left: auto;
+}

@@ -12,6 +12,13 @@
         <input matInput placeholder="Enter Your Email..." />
       </mat-form-field>
       <mat-form-field>
+        <mat-label>Message Type</mat-label>
+        <select matNativeControl required>
+          <option value="enquiry">Enquiry</option>
+          <option value="order">Order</option>
+        </select>
+      </mat-form-field>
+      <mat-form-field>
         <mat-label>Message</mat-label>
         <textarea matInput placeholder="Enter A Message..."></textarea>
       </mat-form-field>
