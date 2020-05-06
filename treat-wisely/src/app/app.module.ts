@@ -9,6 +9,8 @@ import { AboutComponent } from "./about/about.component";
 import { ContactComponent } from "./contact/contact.component";
 import { NavComponent } from "./nav/nav.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { FooterComponent } from "./footer/footer.component";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     AboutComponent,
     ContactComponent,
     NavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
