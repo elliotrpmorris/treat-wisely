@@ -2,15 +2,90 @@
   <br />
   <h2>Slimming friendly treat bags, measured to pleasure.</h2>
   <br />
-  <div fxLayout="row">
-    <mat-card fxFlex="440px">
-      <mat-card-title>Latest Offer</mat-card-title>
-      <mat-card-subtitle>WAS £2 NOW £1.50 each</mat-card-subtitle>
+  <div
+    fxLayout="row wrap"
+    fxLayout.md="row nowrap"
+    fxLayout.lg="row nowrap"
+    fxLayoutGap="15px"
+  >
+    <mat-card fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%">
+      <mat-card-title>Large Bag</mat-card-title>
+      <mat-card-subtitle>£1.50 (Totalling daily allowance)</mat-card-subtitle>
       <img src="../../assets/homepage.jpg" mat-card-image />
       <mat-card-content
         >Bags made up to suit your dietary requirements and
         tastes.</mat-card-content
       >
     </mat-card>
+    <div fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%">
+      <br fxShow fxHide.md fxHide.lg fxHide.xl />
+      <h3>
+        How to order?
+      </h3>
+      <p>
+        To order please contact us via our
+        <a
+          href="https://www.facebook.com/treatwisely"
+          class="link"
+          target="_blank"
+          >Facebook</a
+        >,
+        <a
+          href="https://www.instagram.com/treat_wisely/"
+          class="link"
+          target="_blank"
+          >Instagram</a
+        >
+        or message us via the
+        <a routerLink="/contact" class="link">contact form!</a>
+      </p>
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+  <div>
+    <br />
+    <mat-divider></mat-divider>
+    <br />
+    <h3 fxLayout fxLayoutAlign="center">Check out some of our reviews!</h3>
+    <mat-tab-group>
+      <mat-tab label="First">
+        <div class="quote">
+          <blockquote>
+            <p>
+              Just received my second order of treat bags and as before they are
+              fab, such a mixture of bits, and well colour coded 😉 the girls
+              also wrote me a lovely little message in the box as I'm nearly at
+              my target 😊 lovely unexpected personal touch! Thanks again! Xx
+            </p>
+          </blockquote>
+        </div>
+      </mat-tab>
+      <mat-tab label="Second">
+        <div class="quote">
+          <blockquote>
+            <p>
+              Wow wow wow!!! My goodies arrived today!! And couldn't wait to
+              post my review!! What a fabulous box of treats!!🍫🍬🎉 Brilliant
+              service from the off! Lots of questions I had and all answered
+              within minutes! They asked what I didn't like and personalised the
+              bags for my tastes!! Wonderful! I'm so excited because I know this
+              will keep me on track!! Will definitely be ordering again!! Thank
+              you!!!☺️☺️☺️👍🏻😁xxx
+            </p>
+          </blockquote>
+        </div>
+      </mat-tab>
+      <mat-tab label="Third">
+        <div class="quote">
+          <blockquote>
+            <p>
+              Amazing customer service. Brilliant and promot delivery, yummy
+              sweets to satisfy my sweet tooth, catered to my vegetarian diet.
+              All on plan too! Thank you.
+            </p>
+          </blockquote>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
   </div>
 </section>

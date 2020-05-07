@@ -10,6 +10,8 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
+import { MatChipsModule } from "@angular/material/chips";
+import { MatTabsModule } from "@angular/material/tabs";
 
 @NgModule({
   imports: [
@@ -23,6 +25,8 @@ import { MatInputModule } from "@angular/material/input";
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatChipsModule,
+    MatTabsModule,
   ],
   exports: [
     MatButtonModule,
@@ -34,6 +38,8 @@ import { MatInputModule } from "@angular/material/input";
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatChipsModule,
+    MatTabsModule,
   ],
 })
 export class MaterialModule {}

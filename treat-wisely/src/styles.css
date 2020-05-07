@@ -30,3 +30,33 @@ body {
     width: 1170px;
   }
 }
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.link:last-child {
+  margin-right: 0;
+}
+.link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: black;
+  transition: width 0.3s;
+  transform: background 0.5s;
+  position: relative;
+  z-index: 2;
+}
+@media (hover) {
+  .link:hover,
+  .link:focus {
+    transition: color 0.6s;
+  }
+  .link:hover:after,
+  .link:focus:after {
+    width: 100%;
+  }
+}

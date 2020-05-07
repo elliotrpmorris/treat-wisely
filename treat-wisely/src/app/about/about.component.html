@@ -1,21 +1,32 @@
 <section class="container">
   <br />
-  <div fxLayout="row" fxLayoutGap="15px">
-    <mat-card>
-      <mat-card-title>Test</mat-card-title>
-      <mat-card-content
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio
-        repellat amet ipsa? Voluptates neque qui placeat quam nemo atque autem
-        sint, quis odit doloremque ab nisi quod facere veniam.</mat-card-content
-      >
-    </mat-card>
-    <mat-card>
-      <mat-card-title>Test</mat-card-title>
-      <mat-card-content
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio
-        repellat amet ipsa? Voluptates neque qui placeat quam nemo atque autem
-        sint, quis odit doloremque ab nisi quod facere veniam.</mat-card-content
-      >
-    </mat-card>
+  <div
+    fxLayout="row wrap"
+    fxLayout.md="row nowrap"
+    fxLayout.lg="row nowrap"
+    fxLayoutGap="15px"
+  >
+    <div fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%">
+      <h2>
+        About Us!
+      </h2>
+      <p>
+        We are two friends who joined slimming world together. We wanted to help
+        other people on their journeys by offering ready made up treat bags
+        containing daily allowance. As many of us struggle on budgeting our
+        allowances, we have tried to make it easy for anyone who is short on
+        time or just needs the worry taken away.
+      </p>
+      <p>
+        Each bag has treats marked with individual values, and each bag has a
+        motivational sticker!
+      </p>
+    </div>
+    <div fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%">
+      <app-carousel
+        [slides]="slides"
+        [animationType]="animationType"
+      ></app-carousel>
+    </div>
   </div>
 </section>

@@ -1,0 +1,37 @@
+.quote {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.5rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.quote blockquote {
+  border: solid 2px #757575;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.quote blockquote:before {
+  background-color: #fafafa;
+  bottom: -10%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  transform: rotate(-15deg) skew(5deg);
+}
+.quote blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+.quote blockquote cite:before {
+  content: "- ";
+}
+.quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
