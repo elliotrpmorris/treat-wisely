@@ -11,7 +11,6 @@ import { NavComponent } from "./nav/nav.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FooterComponent } from "./footer/footer.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { ProductsComponent } from './products/products.component';
     ContactComponent,
     NavComponent,
     FooterComponent,
-    ProductsComponent,
   ],
   imports: [
     BrowserModule,
