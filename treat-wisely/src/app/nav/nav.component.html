@@ -9,11 +9,15 @@
       <mat-icon>menu</mat-icon>
     </button>
     <h1 class="title">
-      <a class="title-link" routerLink="/">Treat Wisely</a>
+      <a class="title-link link" routerLink="/">Treat Wisely</a>
     </h1>
     <div class="nav" fxLayout fxShow="true" fxHide.lt-md>
-      <a fxFlexAlign="center" routerLink="/about" mat-button>About</a>
-      <a fxFlexAlign="center" routerLink="/contact" mat-button>Contact</a>
+      <a class="link" fxFlexAlign="center" routerLink="/about" mat-button
+        >About</a
+      >
+      <a class="link" fxFlexAlign="center" routerLink="/contact" mat-button
+        >Contact</a
+      >
       <img
         fxFlexAlign="center"
         fx
@@ -27,8 +31,8 @@
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav #sidenav>
     <mat-nav-list fxLayout="column" fxLayoutGap="10px">
-      <a routerLink="/about" mat-button>About</a>
-      <a routerLink="/contact" mat-button>Contact</a>
+      <a class="link" routerLink="/about" mat-button>About</a>
+      <a class="link" routerLink="/contact" mat-button>Contact</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content fxFlexFill

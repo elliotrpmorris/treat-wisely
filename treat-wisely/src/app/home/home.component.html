@@ -2,8 +2,13 @@
   <br />
   <h2>Slimming friendly treat bags, measured to pleasure.</h2>
   <br />
-  <div fxLayout="row" fxLayoutGap="15px">
-    <mat-card fxFlex="50%">
+  <div
+    fxLayout="row wrap"
+    fxLayout.md="row nowrap"
+    fxLayout.lg="row nowrap"
+    fxLayoutGap="15px"
+  >
+    <mat-card fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%">
       <mat-card-title>Large Bag</mat-card-title>
       <mat-card-subtitle>£1.50 (Totalling daily allowance)</mat-card-subtitle>
       <img src="../../assets/homepage.jpg" mat-card-image />
@@ -12,7 +17,28 @@
         tastes.</mat-card-content
       >
     </mat-card>
-    <div fxFlex="50%">
+    <div fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" fxFlex.xl="50%">
+      <h3>
+        How to order?
+      </h3>
+      <p>
+        To order please contact us via our
+        <a
+          href="https://www.facebook.com/treatwisely"
+          class="link"
+          target="_blank"
+          >Facebook</a
+        >,
+        <a
+          href="https://www.instagram.com/treat_wisely/"
+          class="link"
+          target="_blank"
+          >Instagram</a
+        >
+        or message us via the
+        <a routerLink="/contact" class="link">contact form!</a>
+      </p>
+
       <div class="quote">
         <blockquote>
           <p>

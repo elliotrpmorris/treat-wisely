@@ -11,6 +11,7 @@ import { NavComponent } from "./nav/nav.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FooterComponent } from "./footer/footer.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
     ContactComponent,
     NavComponent,
     FooterComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
