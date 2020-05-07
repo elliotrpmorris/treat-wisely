@@ -11,7 +11,9 @@ import { NavComponent } from "./nav/nav.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FooterComponent } from "./footer/footer.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from "./carousel/carousel.component";
+import { ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     MaterialModule,
     FlexLayoutModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

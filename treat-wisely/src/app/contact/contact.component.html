@@ -8,27 +8,49 @@
     fxFlex.xl="50%"
   >
     <mat-card-title>Contact Us!</mat-card-title>
-    <form fxLayout="column" fxLayoutGap="15px">
+    <form
+      [formGroup]="contactForm"
+      fxLayout="column"
+      fxLayoutGap="15px"
+      (ngSubmit)="onSubmit()"
+      id="contact-form"
+      method="post"
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <mat-form-field>
         <mat-label>Name</mat-label>
-        <input matInput placeholder="Enter Your Name..." />
+        <input
+          formControlName="name"
+          matInput
+          placeholder="Enter Your Name..."
+        />
       </mat-form-field>
       <mat-form-field>
         <mat-label>Email</mat-label>
-        <input matInput placeholder="Enter Your Email..." />
+        <input
+          formControlName="email"
+          matInput
+          placeholder="Enter Your Email..."
+        />
       </mat-form-field>
       <mat-form-field>
         <mat-label>Message Type</mat-label>
-        <select matNativeControl required>
+        <select formControlName="type" matNativeControl required>
           <option value="enquiry">Enquiry</option>
           <option value="order">Order</option>
         </select>
       </mat-form-field>
       <mat-form-field>
         <mat-label>Message</mat-label>
-        <textarea matInput placeholder="Enter A Message..."></textarea>
+        <textarea
+          formControlName="message"
+          matInput
+          placeholder="Enter A Message..."
+        ></textarea>
       </mat-form-field>
-      <button class="submit" color="accent" mat-raised-button>Send!</button>
+      <button class="submit" type="submit" color="accent" mat-raised-button>
+        Send!
+      </button>
     </form>
   </mat-card>
 </section>
