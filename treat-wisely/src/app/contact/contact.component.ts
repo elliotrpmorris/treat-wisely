@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
       .set("form-name", "contact")
       .append("name", this.contactForm.value.name)
       .append("email", this.contactForm.value.email)
-      .append("art", this.contactForm.value.art)
+      .append("type", this.contactForm.value.type)
       .append("message", this.contactForm.value.message);
     this.http
       .post("/", body.toString(), {
