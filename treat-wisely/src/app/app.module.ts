@@ -11,7 +11,6 @@ import { NavComponent } from "./nav/nav.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FooterComponent } from "./footer/footer.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { CarouselComponent } from "./carousel/carousel.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
@@ -23,7 +22,6 @@ import { HttpClientModule } from "@angular/common/http";
     ContactComponent,
     NavComponent,
     FooterComponent,
-    CarouselComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,56 +1,63 @@
 <br />
 <section class="container">
-  <mat-card
-    fxFlex="100%"
-    fxFlex.sm="100%"
-    fxFlex.md="50%"
-    fxFlex.lg="50%"
-    fxFlex.xl="50%"
+  <div
+    fxLayout="row wrap"
+    fxLayout.md="row nowrap"
+    fxLayout.lg="row nowrap"
+    fxLayoutGap="15px"
   >
-    <mat-card-title>Contact Us!</mat-card-title>
-    <form
-      [formGroup]="contactForm"
-      fxLayout="column"
-      fxLayoutGap="15px"
-      (ngSubmit)="onSubmit()"
-      id="contact-form"
-      method="post"
+    <mat-card
+      fxFlex="100%"
+      fxFlex.sm="100%"
+      fxFlex.md="50%"
+      fxFlex.lg="50%"
+      fxFlex.xl="50%"
     >
-      <input type="hidden" name="form-name" value="contact" />
-      <mat-form-field>
-        <mat-label>Name</mat-label>
-        <input
-          formControlName="name"
-          matInput
-          placeholder="Enter Your Name..."
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Email</mat-label>
-        <input
-          formControlName="email"
-          matInput
-          placeholder="Enter Your Email..."
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Message Type</mat-label>
-        <select formControlName="type" matNativeControl required>
-          <option value="enquiry">Enquiry</option>
-          <option value="order">Order</option>
-        </select>
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Message</mat-label>
-        <textarea
-          formControlName="message"
-          matInput
-          placeholder="Enter A Message..."
-        ></textarea>
-      </mat-form-field>
-      <button class="submit" type="submit" color="accent" mat-raised-button>
-        Send!
-      </button>
-    </form>
-  </mat-card>
+      <mat-card-title>Contact Us!</mat-card-title>
+      <form
+        [formGroup]="contactForm"
+        fxLayout="column"
+        fxLayoutGap="15px"
+        (ngSubmit)="onSubmit()"
+        id="contact-form"
+        method="post"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input
+            formControlName="name"
+            matInput
+            placeholder="Enter Your Name..."
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="Enter Your Email..."
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Message Type</mat-label>
+          <select formControlName="type" matNativeControl required>
+            <option value="enquiry">Enquiry</option>
+            <option value="order">Order</option>
+          </select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea
+            formControlName="message"
+            matInput
+            placeholder="Enter A Message..."
+          ></textarea>
+        </mat-form-field>
+        <button class="submit" type="submit" color="accent" mat-raised-button>
+          Send!
+        </button>
+      </form>
+    </mat-card>
+  </div>
 </section>
