@@ -13,6 +13,7 @@
     </h1>
     <div class="nav" fxLayout fxShow="true" fxHide.lt-md>
       <a fxFlexAlign="center" routerLink="/about" mat-button>About</a>
+      <a fxFlexAlign="center" routerLink="/gallery" mat-button>Gallery</a>
       <a fxFlexAlign="center" routerLink="/contact" mat-button>Contact</a>
       <img
         fxFlexAlign="center"
@@ -40,6 +41,13 @@
         routerLink="/about"
         mat-button
         >About</a
+      >
+      <a
+        class="side-nav-link"
+        (click)="sidenav.toggle()"
+        routerLink="/gallery"
+        mat-button
+        >Gallery</a
       >
       <a
         class="side-nav-link"
