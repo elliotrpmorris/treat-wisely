@@ -13,6 +13,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HttpClientModule } from "@angular/common/http";
     ContactComponent,
     NavComponent,
     FooterComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

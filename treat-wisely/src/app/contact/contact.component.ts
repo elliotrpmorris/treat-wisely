@@ -18,7 +18,6 @@ export class ContactComponent implements OnInit {
   contactForm = new FormGroup({
     name: new FormControl(""),
     email: new FormControl(""),
-    type: new FormControl(""),
     message: new FormControl(""),
   });
 
@@ -27,7 +26,6 @@ export class ContactComponent implements OnInit {
       .set("form-name", "contact")
       .append("name", this.contactForm.value.name)
       .append("email", this.contactForm.value.email)
-      .append("type", this.contactForm.value.type)
       .append("message", this.contactForm.value.message);
     this.http
       .post("/", body.toString(), {
